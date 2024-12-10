@@ -1,0 +1,20 @@
+{
+  "extends": "stylelint-config-standard",
+  "ignoreFiles": [
+    "dist/*.css",
+    "src/shared/*.css",
+    "src/**/*.html"
+  ],
+  "rules": {
+    "selector-class-pattern": null,
+    "selector-pseudo-element-no-unknown": null,
+    "selector-pseudo-class-no-unknown": null,
+    "keyframes-name-pattern": null,
+    "no-descending-specificity": null,
+    "selector-id-pattern": null,
+    "no-duplicate-selectors": null,
+    "number-max-precision": null,
+    "at-rule-no-unknown": null,
+    "custom-property-pattern": null
+  }
+}

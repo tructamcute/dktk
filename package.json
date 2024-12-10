@@ -1,0 +1,43 @@
+{
+	"name": "login-page-css",
+	"version": "1.0.0",
+	"repository": "git@github.com:mazipan/login-page-css.git",
+	"author": "Irfan Maulana <https://mazipan.space/>",
+	"license": "MIT",
+	"private": false,
+	"scripts": {
+		"dev": "parcel src/index.html src/**/*.html",
+		"build": "cross-env NODE_ENV=production rimraf dist && parcel build src/index.html src/**/*.html --public-url https://mazipan.github.io/login-page-css/",
+		"lint:css": "stylelint 'src/**/*.css' --fix",
+		"lint:html": "eslint 'src/**/*.html' --fix",
+		"lint": "yarn lint:css && yarn lint:html",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"prepare": "husky install"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^18.4.3",
+		"@commitlint/config-conventional": "^18.4.3",
+		"@parcel/transformer-image": "^2.10.3",
+		"autoprefixer": "^10.4.16",
+		"cross-env": "^7.0.3",
+		"eslint": "^8.56.0",
+		"eslint-plugin-html": "^7.1.0",
+		"husky": "^8.0.3",
+		"lint-staged": "^15.2.0",
+		"parcel": "^2.10.3",
+		"postcss": "^8.4.32",
+		"postcss-modules": "^6.0.0",
+		"prettier": "^3.1.1",
+		"prettier-plugin-tailwindcss": "^0.5.10",
+		"rimraf": "^5.0.5",
+		"sass": "^1.69.5",
+		"stylelint": "^16.1.0",
+		"stylelint-config-standard": "^36.0.0",
+		"tailwindcss": "^3.4.0"
+	},
+	"staticFiles": {
+		"staticPath": [
+			"src/assets"
+		]
+	}
+}
